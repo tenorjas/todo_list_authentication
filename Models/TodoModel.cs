@@ -1,9 +1,11 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace todo_auth.Models
 {
     public class TodoModel
     {
+        [Key]
         public string UserId {get; set;}
         public string TaskName {get; set;}
         public bool IsComplete {get; set;}
